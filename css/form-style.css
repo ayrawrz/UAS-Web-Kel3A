@@ -1,0 +1,100 @@
+/* Modern Styling for Form Registrasi */
+:root {
+    --primary-gray: #2c3e50;
+    --secondary-gray: #34495e;
+    --light-gray: #f8f9fa;
+    --accent-blue: #3498db;
+    --hover-blue: #2980b9;
+}
+
+body {
+    background-color: #00197b;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    border: 2px solid #002137;
+    border-radius: 12px !important;
+    background-color: rgb(233, 233, 233);
+    padding: 2rem;
+}
+
+/* Header Title */
+h2.text-center {
+    color: var(--primary-gray);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+/* Form Styling */
+form {
+    margin-top: 1rem;
+}
+
+.form-label {
+    color: var(--primary-gray);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.form-control, 
+.form-select {
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: var(--secondary-gray);
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.25);
+}
+
+.form-select option {
+    color: var(--primary-gray);
+}
+
+/* Button Styling */
+.btn {
+    border-radius: 6px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: var(--accent-blue);
+    border: none;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--hover-blue);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h2.text-center {
+        font-size: 1.6rem;
+    }
+
+    .form-control,
+    .form-select {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

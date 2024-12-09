@@ -1,0 +1,118 @@
+/* Modern styling for Quiz Peminatan */
+:root {
+    --primary-gray: #2c3e50;
+    --secondary-gray: #34495e;
+    --light-gray: #f8f9fa;
+    --accent-blue: #3498db;
+    --hover-blue: #2980b9;
+}
+
+body {
+    background-color: #f5f6fa;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+    box-shadow: 0 0 30px rgba(0,0,0,0.05);
+    border: none !important;
+    border-radius: 12px !important;
+}
+
+.header-title h1 a {
+    font-size: 2.2rem;
+    letter-spacing: -0.5px;
+}
+
+.header-title hr {
+    opacity: 0.1;
+    margin: 1.5rem 0;
+}
+
+/* Table Styling */
+.table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin-top: 1rem;
+}
+
+.table thead th {
+    border: none;
+    background-color: var(--light-gray);
+    color: var(--primary-gray);
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    transition: transform 0.2s ease;
+}
+
+.table tbody tr:hover {
+    transform: translateY(-2px);
+    background-color: rgba(52, 152, 219, 0.02);
+}
+
+.table tbody td {
+    padding: 1rem;
+    border: none;
+    background-color: white;
+    vertical-align: middle;
+}
+
+/* Button Styling */
+.btn {
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent-blue);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-blue);
+    transform: translateY(-1px);
+}
+
+.btn-info {
+    background-color: #5bc0de;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+}
+
+.btn-sm {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.8rem;
+    margin: 0 0.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem !important;
+    }
+    
+    .header-title h1 a {
+        font-size: 1.8rem;
+    }
+    
+    .table thead th {
+        font-size: 0.8rem;
+    }
+    
+    .btn-sm {
+        padding: 0.2rem 0.6rem;
+        font-size: 0.8rem;
+    }
+}
