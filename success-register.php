@@ -96,7 +96,7 @@
             </div>
         <?php endif; ?>
         
-        <a href="index.html" class="back-button">Lanjut untuk Mengisi Quiz</a>
+        <a href="landing-page.html" class="back-button">Lanjut untuk Mengisi Quiz</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
